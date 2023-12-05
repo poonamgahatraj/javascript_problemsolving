@@ -119,4 +119,24 @@ for(let i=0;i<arr3.length;i++)
 console.log(sum1);
 console.log(product);
 
+//a JavaScript program to shuffle an array.
+
+const arr4 = ['1','2','3','4','5','6','7','8','9'];
+
+
+const shuffledArr = arr4.sort(() => Math.random() - 0.5);
+console.log(shuffledArr);
+
+// JavaScript program to compute the sum of each individual index value in the given array.
+
+var array1 = [16,0,2,3,4]
+var array2 = [3,5,6,7,8,13]
+var l = Math.max(array1.length, array2.length);
+var result1 = Array(l);
+for(var i=0; i<l; ++i) result1[i] = (array1[i] || 0) + (array2[i] || 0);
+
+console.log(result1)
+
+//
+
 </script>
