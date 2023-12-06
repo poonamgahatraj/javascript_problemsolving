@@ -171,8 +171,8 @@ var library = [
    { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
    ];
 
-var x=library.sort((a, b) => {
-    return a.title - b.title;
+var x=library.sort((b,a) => {
+    return a.libraryID - b.libraryID;
 })
 
 console.log(x);
