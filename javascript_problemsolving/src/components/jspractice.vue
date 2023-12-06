@@ -137,6 +137,22 @@ for(var i=0; i<l; ++i) result1[i] = (array1[i] || 0) + (array2[i] || 0);
 
 console.log(result1)
 
-//
+//Write a JavaScript program to find duplicate values in a JavaScript array.
+
+let check_duplicate_in_array = (input_array) => {
+    input_array = input_array.sort((a, b) => a - b);
+    let duplicate_elements = []
+    for (let i=1; i<=input_array.length;i++) 
+    {
+        if (input_array[i] ===
+            input_array[i - 1]) {
+            duplicate_elements.push(
+                input_array[i]);
+        }
+    }
+   return [...new Set(duplicate_elements)];
+}
+let array3 = [1,2,3,4,2,1,3];
+console.log(check_duplicate_in_array(array3));
 
 </script>
