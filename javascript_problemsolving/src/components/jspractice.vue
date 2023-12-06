@@ -155,4 +155,12 @@ let check_duplicate_in_array = (input_array) => {
 let array3 = [1,2,3,4,2,1,3];
 console.log(check_duplicate_in_array(array3));
 
+//Compute the union of two arrays
+
+var a=[34, 35, 45, 48, 49];
+var b=[48, 55];
+var c=a.concat(b).sort((a,b)=>(b-a));
+var res=c.filter((value,pos) => {return c.indexOf(value) == pos;} );
+console.log(res)
+
 </script>
