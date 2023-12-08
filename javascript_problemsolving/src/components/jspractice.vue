@@ -1,5 +1,7 @@
 <template></template>
 <script>
+
+//a JavaScript function to check whether an `input` is an array or not.
 let is_array=function(input){
   if(input instanceof Array)
     {
@@ -17,17 +19,17 @@ console.log(is_array([1,2,3]))
 
 let array=[1,2,3,4]
 let clone_array=[]
-// clone_array=array
-// console.log(array);
-// console.log(clone_array)
+clone_array=array
+console.log(array);
+console.log(clone_array)
 
 //loop method
-//  for(let i=0; i<=array.length;i++){
-//     clone_array=array
-//  }
+ for(let i=0; i<=array.length;i++){
+    clone_array=array
+ }
 
-//  console.log(array);
-//  console.log(clone_array)
+ console.log(array);
+ console.log(clone_array)
 
  clone_array=array.slice();
  console.log(array);
@@ -93,7 +95,7 @@ const result = str
 
 console.log(result);
 
-//JavaScript program to find the sum of squares of a numerical vector.
+// q.11 JavaScript program to find the sum of squares of a numerical vector.
 let arr2=[1,2,3,4]
 let sum=0;
 
@@ -176,4 +178,16 @@ var x=library.sort((b,a) => {
 })
 
 console.log(x);
+
+// a JavaScript program to remove duplicate items from an array
+
+let arr5 = [1,2,3,4,1,2,3,4]
+function removeDuplicates(arr5) {
+    return [...new Set(arr5)];
+}
+ 
+console.log(removeDuplicates(arr5));
+
+
+
 </script>
